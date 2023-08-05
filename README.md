@@ -51,3 +51,5 @@ Enter name of work folder: [press Enter for _work]
 Current runner version: '2.307.1'
 2023-08-05 18:26:02Z: Listening for Jobs
 ```
+
+Now check your organization or repository and see if the runner is added.
