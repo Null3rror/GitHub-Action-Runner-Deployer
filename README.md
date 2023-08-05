@@ -1,7 +1,7 @@
 # GitHub-Action-Runner-Deployer
 Dockerized GitHub Action Runner Deployer
 
-# Usage
+# Setup
 ## 1. Cloning
 First, clone the project by running:
 ```
