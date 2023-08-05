@@ -4,6 +4,7 @@ services:
   runner:
     build: .
     environment:
+#      - ORGANIZATION=DionicSoftware
       - OWNER=null3rror
       - REPO=Droste-Effect
       - ACCESS_TOKEN=<YOUR-TOKEN>
