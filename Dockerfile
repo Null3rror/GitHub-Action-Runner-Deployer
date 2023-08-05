@@ -5,7 +5,7 @@ ARG RUNNER_VERSION="2.307.1"
 # update the base packages and add a non-sudo user
 RUN apt-get update -y && apt-get upgrade -y && useradd -m runner
 
-# install python and the packages that our code depends on along with jq so we can parse JSON responses from GitHub API
+# install python and the packages that your code depends on along with jq so we can parse JSON responses from GitHub API
 # add additional packages as necessary
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     curl jq build-essential libssl-dev libffi-dev python3 python3-venv python3-dev python3-pip
