@@ -2,13 +2,19 @@
 Dockerized GitHub Action Runner Deployer
 
 # Usage
-## 1. Creating Access Token
-First, generate an access token from https://github.com/settings/tokens with `repo` and `workflow` scopes. If you want to deploy a runner for your organization then enable `admin:org` scope too.
-## 2. Setting up Environment Variables
-Modify your `docker-compose.yml` by: 
+## 1. Cloning
+First, clone the project by running:
+```
+git clone https://github.com/Null3rror/GitHub-Action-Runner-Deployer.git
+cd GitHub-Action-Runner-Deployer
+```
+## 2. Creating Access Token
+Then generate an access token from https://github.com/settings/tokens with `repo` and `workflow` scopes. If you want to deploy a runner for your organization then enable `admin:org` scope too.
+## 3. Setting up Environment Variables
+Modify your [`docker-compose.yml`](https://github.com/Null3rror/GitHub-Action-Runner-Deployer/blob/master/docker-compose.yml) by: 
   1. Adding your `ACCESS_TOKEN` from the previous step
   2. Setting either `ORGANIZATION` or both `OWNER` and `REPO` environment variables
-## 3. Deploying
+## 4. Deploying
 Run: 
 ```
 docker compose build
