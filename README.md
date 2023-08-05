@@ -18,10 +18,10 @@ Modify your [`docker-compose.yml`](https://github.com/Null3rror/GitHub-Action-Ru
 Run: 
 ```
 docker compose build
-docker compose up -d
-docker logs github-runner-builder-runner-1 -f
+docker compose up --scale runner=2 -d
+docker compose logs -f
 ```
-<br>You should see something like:<br>
+<br>For each runner you should see something like:<br>
 ```
 --------------------------------------------------------------------------------
 |        ____ _ _   _   _       _          _        _   _                      |
@@ -52,4 +52,4 @@ Current runner version: '2.307.1'
 2023-08-05 18:26:02Z: Listening for Jobs
 ```
 
-Now check your organization or repository and see if the runner is added.
+Now check your organization or repository and see if the runners are added.
