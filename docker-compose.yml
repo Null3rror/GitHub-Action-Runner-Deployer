@@ -2,7 +2,6 @@ version: '3'
 
 services:
   runner:
-    container_name: runner
     build: .
     environment:
 #      - ORGANIZATION=DionicSoftware
