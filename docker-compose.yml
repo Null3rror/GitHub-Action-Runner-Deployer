@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  runner:
+    build: .
+    environment:
+      - OWNER=null3rror
+      - REPO=Droste-Effect
+      - ACCESS_TOKEN=<YOUR-TOKEN>
